@@ -25,6 +25,14 @@ void bfs(int node ,unordered_map<int, bool> &visited) {
   visited[node] = true;
   while(!q.empty()){
     int front =q.front();
+    cout<< front << " ";
+    q.pop();    
+    for(auto neighbor:adj[front]){
+        if(!visited[neighbor]){
+            visited[neighbor] = true;
+            q.push(neighbor);
+        }
+    }
   }
 }
 int main(){
