@@ -1,6 +1,6 @@
 
     #include<bits/stdc++.h>
-using namespace std;
+    using namespace std;
     
     void power(vector<int> nums, int i,vector<vector<int>>& result,vector<int> ans){
         //base case 
